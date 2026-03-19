@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Monkeys Sandwich Bar - Preston</title>
+    <!-- Using Poppins to match the clean, rounded geometric aesthetic of the reference -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Legendary chicken and rice takeaway in Preston serving UCLan for a decade.">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="The 3 Monkeys">
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About Us</a>
+            <a href="#menu">Menu</a>
+            <a href="#find-us">Find Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Preston's Legendary<br>Chicken & Rice</h1>
+                <p>Serving UCLan students and locals for a decade. Famous for our Portuguese Chicken, Sizzler Wraps, and the iconic Special Sauce. A staple diet in Preston!</p>
+                <div class="hero-button-wrapper">
+                    <button id="orderHeroBtn" class="btn hero-cta-btn">
+                        <div class="hero-cta-btn-content">
+                            <span class="btn-text">Order Now</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./images/chicken_rice.png" alt="Portuguese Chicken and Rice" class="floating">
+            </div>
+        </section>
+
+        <!-- Why We're Famous (Full Width) -->
+        <section class="services-full" id="about">
+            <h2>Why We're Famous</h2>
+            <div class="services-grid-4">
+                <div class="service-item">
+                    <div class="icon">🍱</div>
+                    <h3>Custom Meals</h3>
+                    <p>Prepared fresh in front of you. Choose your protein, base (rice/chips), and fresh salad.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">🔥</div>
+                    <h3>The Special Sauce</h3>
+                    <p>Our legendary secret house sauce that brings everyone back for more every week!</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">🎓</div>
+                    <h3>Student Value</h3>
+                    <p>Massive portions, healthy options, and great value right by the UCLan campus.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">🌶️</div>
+                    <h3>Spice It Up</h3>
+                    <p>From mild Tikka to fiery Jerk and Mexican Sizzlers, we cater to your heat levels.</p>
+                </div>
+            </div>
+            
+            <div class="brand-partners">
+                <div class="logos">
+                    <span>UCLan Students</span>
+                    <span>Preston Locals</span>
+                    <span>10+ Years</span>
+                    <span>Est. 2014</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Authentic Menu Board -->
+        <section class="menu-board-section" id="menu">
+            <div class="menu-board-header">
+                <h2>Our Legendary Menu</h2>
+                <p>Authentic, customisable, and made fresh in front of you.</p>
+            </div>
+            
+            <!-- Authentic Takeaway photography -->
+            <div class="visual-favorites">
+                <div class="menu-card visual-card">
+                    <div class="image-wrapper">
+                        <img src="./images/authentic_spicy_rice_1773883892839.png" alt="Legendary Spicy Rice Box">
+                        <span class="badge">🔥 LEGENDARY</span>
+                    </div>
+                    <h4>Spicy Rice Chicken Box</h4>
+                    <span class="price">£9.00</span>
+                </div>
+                <div class="menu-card visual-card">
+                    <div class="image-wrapper">
+                        <img src="./images/authentic_falafel_sub_1773883906954.png" alt="Falafel Sub Roll">
+                        <span class="badge">VEGAN</span>
+                    </div>
+                    <h4>Falafel Sub Sandwich</h4>
+                    <span class="price">£5.00</span>
+                </div>
+                <div class="menu-card visual-card">
+                    <div class="image-wrapper">
+                        <img src="./images/authentic_breakfast_wrap_1773883918953.png" alt="Breakfast Chicken Wrap">
+                        <span class="badge">POPULAR</span>
+                    </div>
+                    <h4>Breakfast Chicken Wrap</h4>
+                    <span class="price">£6.50</span>
+                </div>
+                <div class="menu-card visual-card">
+                    <div class="image-wrapper">
+                        <img src="./images/authentic_half_box_1773883936000.png" alt="Half Rice Half Chips Box">
+                        <span class="badge">MASSIVE</span>
+                    </div>
+                    <h4>Half Rice Half Chips Box</h4>
+                    <span class="price">£8.00</span>
+                </div>
+            </div>
+
+            <!-- Build Your Own Steps -->
+            <div class="menu-board-header" style="margin-top: 6rem;">
+                <h2>Build Your Own</h2>
+                <p>The authentic 3 Monkeys 3-Step Process</p>
+            </div>
+
+            <div class="menu-steps-container">
+                <div class="step-box">
+                    <div class="step-title">Step 1 - Choose Your Base</div>
+                    <ul>
+                        <li><span>Sub Roll</span> <span class="price">£1.50</span></li>
+                        <li><span>Tortilla Wrap</span> <span class="price">£1.50</span></li>
+                        <li><span>Salad Box</span> <span class="price">£2.50</span></li>
+                        <li><span>Spicy Rice Box (R/L/XL)</span> <span class="price">£2.50+</span></li>
+                        <li><span>Paratha (2)</span> <span class="price">£2.50</span></li>
+                        <li><span>Chips</span> <span class="price">£1.50</span></li>
+                        <li><span>Half Rice | Half Chips</span> <span class="price">£4.00</span></li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <div class="step-title">Step 2 - Choose Your Mains</div>
+                    <ul>
+                        <li><span>3 Monkeys Original Jerk</span> <span class="price">£4.00+</span></li>
+                        <li><span>Grilled Beef Steak</span> <span class="price">£5.00+</span></li>
+                        <li><span>Seekh Kebab</span> <span class="price">£4.50</span></li>
+                        <li><span>Spicy South African Sausage</span> <span class="price">£3.50</span></li>
+                        <li><span>Fried Fish (Crispy Batter)</span> <span class="price">£4.50</span></li>
+                        <li><span>Grilled Halloumi (V)</span> <span class="price">£3.50</span></li>
+                        <li><span>Falafel (V) / Vegan Kebab</span> <span class="price">£3.50</span></li>
+                    </ul>
+                </div>
+                <div class="step-box">
+                    <div class="step-title">Step 3 - Flavour Kicks & Extras</div>
+                    <div class="flavours-list">
+                        <span class="badge-flavour">1. Portuguese Peri Peri</span>
+                        <span class="badge-flavour">2. Mexican Sizzler</span>
+                        <span class="badge-flavour">3. Korean BBQ</span>
+                        <span class="badge-flavour">4. Tikka Masala</span>
+                        <span class="badge-flavour">5. Caribbean BBQ</span>
+                    </div>
+                    <p style="color: #aeb4c5; font-size: 0.9rem; line-height: 1.5; margin-top: 1rem;">
+                        <strong>Extras (£1.00 each):</strong> Fried Egg, Halloumi, Turkey Rashers, Hash Brown, Spicy Sausage, Grated Cheese
+                    </p>
+                </div>
+            </div>
+
+            <!-- Secondary Menus -->
+            <div class="other-menus-grid">
+                <!-- Signatures -->
+                <div class="menu-category">
+                    <h3>Signature Burgers</h3>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">3 Monkeys Classic</span>
+                            <span class="menu-item-price">£4.50</span>
+                        </div>
+                        <p class="menu-item-desc">Beef smash burger, American cheese, salad, caramelised onions & special sauce.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Jerk Chicken Burger</span>
+                            <span class="menu-item-price">£5.50</span>
+                        </div>
+                        <p class="menu-item-desc">Original jerk chicken, brioche bun, salad, cheese & secret sauce.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Buttermilk Fried Chicken</span>
+                            <span class="menu-item-price">£5.50</span>
+                        </div>
+                        <p class="menu-item-desc">Louisiana spice blend, toasted bun, salad, cheese & special sauce.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">3 Monkeys Hot Dog</span>
+                            <span class="menu-item-price">£5.00</span>
+                        </div>
+                        <p class="menu-item-desc">American beef dog, cheese, salsa, onions & special sauce on brioche.</p>
+                    </div>
+
+                    <div class="meal-deal-addon">Make it a meal (Chips & Drink) + £2.00</div>
+                </div>
+
+                <!-- Breakfast -->
+                <div class="menu-category">
+                    <h3>Breakfast Menu (Served till 11)</h3>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Full Monkey</span>
+                            <span class="menu-item-price">£8.00</span>
+                        </div>
+                        <p class="menu-item-desc">2 Lamb sausages, 2 eggs, Beans, Hashbrowns, Turkey Bacon, polony, Toast.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Eggs Benny</span>
+                            <span class="menu-item-price">£7.00</span>
+                        </div>
+                        <p class="menu-item-desc">Toasted muffin, hashbrowns, fried eggs with Turkey bacon or sausage & hollandaise.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Bombay Spiced Eggs</span>
+                            <span class="menu-item-price">£6.00</span>
+                        </div>
+                        <p class="menu-item-desc">Asian style omelette, green chillies, cheese & fresh coriander.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">Turkish Eggs (Menemen)</span>
+                            <span class="menu-item-price">£6.00</span>
+                        </div>
+                        <p class="menu-item-desc">Scrambled eggs with onions, tomatoes, peppers & turkish spices.</p>
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-category">
+                    <h3>Sides & Extras</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div>
+                            <div class="menu-item-header"><span class="menu-item-title">Chips</span><span class="menu-item-price">£2.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Salt & Pepper Chips</span><span class="menu-item-price">£3.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Halloumi Fries</span><span class="menu-item-price">£3.50</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Sweet Potato Fries</span><span class="menu-item-price">£3.00</span></div>
+                        </div>
+                        <div>
+                            <div class="menu-item-header"><span class="menu-item-title">Chicken Nuggets (6)</span><span class="menu-item-price">£3.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Chilli Cheese Nugs</span><span class="menu-item-price">£3.50</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Bag of Hash</span><span class="menu-item-price">£2.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Tea & Coffee</span><span class="menu-item-price">£1.50</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info / About Section -->
+        <section class="info-section">
+            <div class="info-container">
+                <h2>Good to Know</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Service Options</h4>
+                        <ul>
+                            <li>✔️ Dine-in & Takeaway</li>
+                            <li>✔️ Delivery Available</li>
+                            <li>✔️ Quick bites & Small plates</li>
+                            <li>✔️ Breakfast, Lunch & Dinner</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Dietary & Offerings</h4>
+                        <ul>
+                            <li>✔️ Vegetarian & Vegan options</li>
+                            <li>✔️ Healthy options</li>
+                            <li>✔️ Great coffee</li>
+                            <li>✔️ Dessert</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Atmosphere</h4>
+                        <ul>
+                            <li>✔️ Casual & Cozy</li>
+                            <li>✔️ Great for Univ Students</li>
+                            <li>✔️ Friendly & Good for Kids</li>
+                            <li>✔️ Perfect for Solo Dining</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Planning & Facilities</h4>
+                        <ul>
+                            <li>💳 All Major Cards Accepted</li>
+                            <li>📱 Contactless & NFC Payments</li>
+                            <li>🚶 Fast Walk-in Service</li>
+                            <li>🛍️ Quick Order Collection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Us Section -->
+        <section class="footer-sections">
+            <div class="find-us-block" id="find-us">
+                <h2>Find Us</h2>
+                <div class="find-grid">
+                    <div class="location-info">
+                        <h3>Visit Our Store</h3>
+                        <p class="address"><span style="font-size:1.2rem; margin-right:0.4rem;">📍</span> 16a Adelphi St, Preston PR1 7BE</p>
+                        
+                        <div class="hours" style="margin-bottom: 2rem;">
+                            <h4><span style="font-size:1.2rem; margin-right:0.4rem;">🕒</span> Opening Hours</h4>
+                            <div class="hours-grid">
+                                <p><span>Mon–Fri:</span> 9 am – 9 pm</p>
+                                <p><span>Sat–Sun:</span> 10 am – 9 pm</p>
+                            </div>
+                        </div>
+
+                        <div class="price-range">
+                            <div class="price-header">
+                                <span class="cash-icon">💵</span>
+                                <div>
+                                    <p class="main-price">£1–10 per person</p>
+                                    <p class="review-count">Reported by 37 people</p>
+                                </div>
+                            </div>
+                            <div class="price-bars">
+                                <div class="price-row">
+                                    <span class="price-label">£1–10</span>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="price-label">£10–20</span>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 25%;"></div></div>
+                                </div>
+                                <div class="price-row">
+                                    <span class="price-label">£20–30</span>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 8%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons" style="margin-top: 2rem; gap: 1.5rem;">
+                            <a href="https://maps.app.goo.gl/ryK8KubEFWiHVJ9TA" target="_blank" class="btn btn-primary">
+                                <span class="btn-text">Get Directions</span>
+                            </a>
+                            <a href="tel:+441772562866" class="btn btn-secondary">
+                                <span class="btn-text">Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <!-- Embed simple iframe focusing on real address -->
+                        <iframe src="https://maps.google.com/maps?q=The%203%20Monkeys%20Sandwich%20Bar,%2016a%20Adelphi%20St,%20Preston&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Google Reviews Widget -->
+                <div class="reviews-block">
+                    <div class="reviews-overview">
+                        <h2>4.4 <span>★★★★½</span></h2>
+                        <p style="color:var(--text-muted); font-weight: 500;">Based on 360 reviews &middot; Google Maps</p>
+                    </div>
+
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">S</div>
+                                <div class="reviewer-info">
+                                    <h4>Sarah Jenkins</h4>
+                                    <p>Local Guide &middot; 42 reviews</p>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"Absolutely love the food here! The Portuguese chicken and rice is legendary for a reason. Great portions, amazing flavor, and the special sauce is unmatched. Highly recommend for students and locals alike!"</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">A</div>
+                                <div class="reviewer-info">
+                                    <h4>Ahtisham Ahmed</h4>
+                                    <p>Local Guide &middot; 26 reviews</p>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                            <p class="review-text">"Delicious food every single time. The lady on the counter is so soft spoken and welcoming.<br><br>Meal type: Lunch"</p>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">M</div>
+                                <div class="reviewer-info">
+                                    <h4>Mark Davidson</h4>
+                                    <p>Local Guide &middot; 188 reviews</p>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★☆</div>
+                            <p class="review-text">"Really solid sandwich bar! The food is always piping hot and the portions are massive. Only giving 4 stars because it gets super busy during the uni lunch rush, but it's totally worth the quick wait."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    
+    <!-- Sticky Mobile CTA -->
+    <div class="mobile-cta-bar">
+        <a href="tel:+441772562866" class="cta-item">
+            <span>Contact</span>
+        </a>
+        <a href="https://maps.app.goo.gl/ryK8KubEFWiHVJ9TA" target="_blank" class="cta-item">
+            <span>Directions</span>
+        </a>
+        <a href="#menu" class="cta-item primary-cta">
+            <span>Order</span>
+        </a>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Order online</h3>
+            <p class="modal-subtitle">The 3 Monkeys Sandwich Bar</p>
+            
+            <div class="order-type-toggle">
+                <button class="type-btn active"><span>✕ </span>Pick-up</button>
+                <button class="type-btn">Delivery</button>
+            </div>
+
+            <div class="place-order-row">
+                <span>Place order with:</span>
+                <span class="info-icon">ⓘ</span>
+            </div>
+            
+            <div class="delivery-partners">
+                <a href="https://the3monkeyspreston.com/" class="partner-card" target="_blank">
+                    <div class="partner-icon icon-yoyo">YOYO</div>
+                    <div class="partner-info">
+                        <h4>OrderYOYO</h4>
+                        <p>Ready in 15 min</p>
+                        <span class="partner-tag">Business website</span>
+                    </div>
+                    <span class="chevron">›</span>
+                </a>
+                
+                <a href="https://www.ubereats.com/gb/store/3-monkeys-sandwich-bar/Qg6IbbSiWOCdxIo5ldspIw?diningMode=PICKUP" class="partner-card" target="_blank">
+                    <div class="partner-icon icon-uber">Uber<br>Eats</div>
+                    <div class="partner-info">
+                        <h4>UberEats</h4>
+                        <p>No fee<br>Ready in 5–20 min</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </a>
+                
+                <a href="https://www.just-eat.co.uk/restaurants-the-3-monkeys-sandwich-bar-preston/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder" class="partner-card" target="_blank">
+                    <div class="partner-icon icon-justeat">🏠</div>
+                    <div class="partner-info">
+                        <h4>Just Eat</h4>
+                        <p>Ready in 10–20 min</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const orderBtn = document.getElementById('orderHeroBtn');
+        const orderModal = document.getElementById('orderModal');
+        const modalClose = document.querySelector('.modal-close');
+
+        if(orderBtn && orderModal) {
+            orderBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                orderModal.classList.add('active');
+            });
+            modalClose.addEventListener('click', () => {
+                orderModal.classList.remove('active');
+            });
+            orderModal.addEventListener('click', (e) => {
+                if(e.target === orderModal) {
+                    orderModal.classList.remove('active');
+                }
+            });
+        }
+
+        // Toggle Logic for Pick-up / Delivery
+        const typeBtns = document.querySelectorAll('.type-btn');
+        typeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const currentActive = document.querySelector('.type-btn.active');
+                if(currentActive !== btn) {
+                    currentActive.classList.remove('active');
+                    const cross = currentActive.querySelector('span');
+                    if(cross) cross.remove();
+                    
+                    btn.classList.add('active');
+                    btn.insertAdjacentHTML('afterbegin', '<span>✕ </span>');
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
