@@ -520,6 +520,43 @@
             });
         });
     </script>
+    <!-- AI Chat Bot Widget -->
+    <div class="chat-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>3 Monkeys AI Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="messages-area" id="messagesArea">
+                <div class="message bot">
+                    Hello! Welcome to The 3 Monkeys Café. I'm your AI assistant. How can I help you today? 🐒
+                </div>
+            </div>
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+            <div class="chat-input-area">
+                <button class="voice-btn" id="voiceBtn" title="Speak to AI">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"></path>
+                        <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"></path>
+                    </svg>
+                </button>
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+                <button class="send-btn" id="sendBtn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="chat-bubble" id="chatBubble">
+            <div class="icon">💬</div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
