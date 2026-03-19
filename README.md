@@ -100,7 +100,7 @@ Every section pushes the user toward ordering.
 
 ## 🌐 Live Demo
 
-👉 (Add Netlify link here)
+👉 https://clinquant-fairy-ac76da.netlify.app/
 
 
 
