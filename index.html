@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 Monkeys Sandwich Bar - Preston</title>
-    <!-- Using Poppins to match the clean, rounded geometric aesthetic of the reference -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Neo-Brutalist / Pop-Art Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Legendary chicken and rice takeaway in Preston serving UCLan for a decade.">
 </head>
@@ -23,9 +22,13 @@
             <span class="bar"></span>
         </div>
         <div class="nav-links">
-            <a href="#about">About Us</a>
+            <a href="#home">Home</a>
             <a href="#menu">Menu</a>
-            <a href="#find-us">Find Us</a>
+            <a href="#reserve">Book Table</a>
+            <a href="#find-us">Visit</a>
+            <div class="header-auth" id="headerAuth">
+                <button class="btn btn-secondary login-trigger-btn" id="headerLoginBtn">Login</button>
+            </div>
         </div>
     </nav>
 
@@ -37,9 +40,11 @@
                 <h1>Preston's Legendary<br>Chicken & Rice</h1>
                 <p>Serving UCLan students and locals for a decade. Famous for our Portuguese Chicken, Sizzler Wraps, and
                     the iconic Special Sauce. A staple diet in Preston!</p>
-                <div class="hero-button-wrapper">
-                    <button id="orderHeroBtn" class="btn hero-cta-btn">
-                        <div class="hero-cta-btn-content">
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-big" id="orderHeroBtn">
+                        <div class="btn-shine"></div>
+                        <div class="btn-content">
+                            <span class="btn-icon">🛵</span>
                             <span class="btn-text">Order Now</span>
                         </div>
                     </button>
@@ -87,211 +92,276 @@
             </div>
         </section>
 
-        <!-- The Authentic Menu Board -->
+        <!-- The Menu Board -->
         <section class="menu-board-section" id="menu">
-            <div class="menu-board-header">
-                <h2>Our Legendary Menu</h2>
-                <p>Authentic, customisable, and made fresh in front of you.</p>
-            </div>
+            <div class="container">
+                <div class="menu-board-header">
+                    <h2>The 3 Monkeys Menu</h2>
+                    <p>Authentic Fusion Flavors from Preston</p>
+                </div>
 
-            <!-- Authentic Takeaway photography -->
-            <div class="visual-favorites">
-                <div class="menu-card visual-card anti-gravity float-shadow">
-                    <div class="image-wrapper">
-                        <img src="./images/authentic_spicy_rice_1773883892839.png" alt="Legendary Spicy Rice Box">
-                        <span class="badge">🔥 LEGENDARY</span>
-                    </div>
-                    <h4>Spicy Rice Chicken Box</h4>
-                    <span class="price">£9.00</span>
-                </div>
-                <div class="menu-card visual-card anti-gravity float-shadow">
-                    <div class="image-wrapper">
-                        <img src="./images/authentic_falafel_sub_1773883906954.png" alt="Falafel Sub Roll">
-                        <span class="badge">VEGAN</span>
-                    </div>
-                    <h4>Falafel Sub Sandwich</h4>
-                    <span class="price">£5.00</span>
-                </div>
-                <div class="menu-card visual-card anti-gravity float-shadow">
-                    <div class="image-wrapper">
-                        <img src="./images/authentic_breakfast_wrap_1773883918953.png" alt="Breakfast Chicken Wrap">
-                        <span class="badge">POPULAR</span>
-                    </div>
-                    <h4>Breakfast Chicken Wrap</h4>
-                    <span class="price">£6.50</span>
-                </div>
-                <div class="menu-card visual-card anti-gravity float-shadow">
-                    <div class="image-wrapper">
-                        <img src="./images/authentic_half_box_1773883936000.png" alt="Half Rice Half Chips Box">
-                        <span class="badge">MASSIVE</span>
-                    </div>
-                    <h4>Half Rice Half Chips Box</h4>
-                    <span class="price">£8.00</span>
-                </div>
-            </div>
-
-            <!-- Build Your Own Steps -->
-            <div class="menu-board-header" style="margin-top: 6rem;">
-                <h2>Build Your Own</h2>
-                <p>The authentic 3 Monkeys 3-Step Process</p>
-            </div>
-
-            <div class="menu-steps-container">
-                <div class="step-box anti-gravity">
-                    <div class="step-title">Step 1 - Choose Your Base</div>
-                    <ul>
-                        <li><span>Sub Roll</span> <span class="price">£1.50</span></li>
-                        <li><span>Tortilla Wrap</span> <span class="price">£1.50</span></li>
-                        <li><span>Salad Box</span> <span class="price">£2.50</span></li>
-                        <li><span>Spicy Rice Box (R/L/XL)</span> <span class="price">£2.50+</span></li>
-                        <li><span>Paratha (2)</span> <span class="price">£2.50</span></li>
-                        <li><span>Chips</span> <span class="price">£1.50</span></li>
-                        <li><span>Half Rice | Half Chips</span> <span class="price">£4.00</span></li>
-                    </ul>
-                </div>
-                <div class="step-box anti-gravity">
-                    <div class="step-title">Step 2 - Choose Your Mains</div>
-                    <ul>
-                        <li><span>3 Monkeys Original Jerk</span> <span class="price">£4.00+</span></li>
-                        <li><span>Grilled Beef Steak</span> <span class="price">£5.00+</span></li>
-                        <li><span>Seekh Kebab</span> <span class="price">£4.50</span></li>
-                        <li><span>Spicy South African Sausage</span> <span class="price">£3.50</span></li>
-                        <li><span>Fried Fish (Crispy Batter)</span> <span class="price">£4.50</span></li>
-                        <li><span>Grilled Halloumi (V)</span> <span class="price">£3.50</span></li>
-                        <li><span>Falafel (V) / Vegan Kebab</span> <span class="price">£3.50</span></li>
-                    </ul>
-                </div>
-                <div class="step-box anti-gravity">
-                    <div class="step-title">Step 3 - Flavour Kicks & Extras</div>
-                    <div class="flavours-list">
-                        <span class="badge-flavour">1. Portuguese Peri Peri</span>
-                        <span class="badge-flavour">2. Mexican Sizzler</span>
-                        <span class="badge-flavour">3. Korean BBQ</span>
-                        <span class="badge-flavour">4. Tikka Masala</span>
-                        <span class="badge-flavour">5. Caribbean BBQ</span>
-                    </div>
-                    <p style="color: #aeb4c5; font-size: 0.9rem; line-height: 1.5; margin-top: 1rem;">
-                        <strong>Extras (£1.00 each):</strong> Fried Egg, Halloumi, Turkey Rashers, Hash Brown, Spicy
-                        Sausage, Grated Cheese
-                    </p>
-                </div>
-            </div>
-
-            <!-- Secondary Menus -->
-            <div class="other-menus-grid">
-                <!-- Signatures -->
-                <div class="menu-category">
-                    <h3>Signature Burgers</h3>
-
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">3 Monkeys Classic</span>
-                            <span class="menu-item-price">£4.50</span>
+                <!-- Authentic Takeaway photography -->
+                <div class="visual-favorites">
+                    <div class="menu-card visual-card anti-gravity float-shadow" data-category="Mains"
+                        data-tags="spicy,best-seller">
+                        <div class="image-wrapper">
+                            <img src="./images/authentic_spicy_rice_1773883892839.png" alt="Legendary Spicy Rice Box">
+                            <span class="badge">🔥 LEGENDARY</span>
                         </div>
-                        <p class="menu-item-desc">Beef smash burger, American cheese, salad, caramelised onions &
-                            special sauce.</p>
+                        <h4>Spicy Rice Chicken Box</h4>
+                        <span class="price">£9.00</span>
+                        <button class="btn btn-outline add-to-cart-btn" data-id="1">Add</button>
                     </div>
-
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">Jerk Chicken Burger</span>
-                            <span class="menu-item-price">£5.50</span>
+                    <div class="menu-card visual-card anti-gravity float-shadow" data-category="Veg"
+                        data-tags="veg,vegan,healthy">
+                        <div class="image-wrapper">
+                            <img src="./images/authentic_falafel_sub_1773883906954.png" alt="Falafel Sub Roll">
+                            <span class="badge">VEGAN</span>
                         </div>
-                        <p class="menu-item-desc">Original jerk chicken, brioche bun, salad, cheese & secret sauce.</p>
+                        <h4>Falafel Sub Sandwich</h4>
+                        <span class="price">£5.00</span>
+                        <button class="btn btn-outline add-to-cart-btn" data-id="5">Add</button>
                     </div>
-
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">Buttermilk Fried Chicken</span>
-                            <span class="menu-item-price">£5.50</span>
+                    <div class="menu-card visual-card anti-gravity float-shadow">
+                        <div class="image-wrapper">
+                            <img src="./images/authentic_breakfast_wrap_1773883918953.png" alt="Breakfast Chicken Wrap">
+                            <span class="badge">POPULAR</span>
                         </div>
-                        <p class="menu-item-desc">Louisiana spice blend, toasted bun, salad, cheese & special sauce.</p>
+                        <h4>Breakfast Chicken Wrap</h4>
+                        <span class="price">£6.50</span>
+                        <button class="btn btn-outline add-to-cart-btn" data-id="3">Add</button>
                     </div>
-
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">3 Monkeys Hot Dog</span>
-                            <span class="menu-item-price">£5.00</span>
+                    <div class="menu-card visual-card anti-gravity float-shadow">
+                        <div class="image-wrapper">
+                            <img src="./images/authentic_half_box_1773883936000.png" alt="Half Rice Half Chips Box">
+                            <span class="badge">MASSIVE</span>
                         </div>
-                        <p class="menu-item-desc">American beef dog, cheese, salsa, onions & special sauce on brioche.
+                        <h4>Half Rice Half Chips Box</h4>
+                        <span class="price">£8.00</span>
+                        <button class="btn btn-outline add-to-cart-btn" data-id="4">Add</button>
+                    </div>
+                </div>
+
+                <!-- Build Your Own Steps -->
+                <div class="menu-board-header" style="margin-top: 6rem;">
+                    <h2>Build Your Own</h2>
+                    <p>The authentic 3 Monkeys 3-Step Process</p>
+                </div>
+
+                <div class="menu-steps-container">
+                    <div class="step-box anti-gravity">
+                        <div class="step-title">Step 1 - Choose Your Base</div>
+                        <ul>
+                            <li><span>Sub Roll</span> <span class="price">£1.50</span></li>
+                            <li><span>Tortilla Wrap</span> <span class="price">£1.50</span></li>
+                            <li><span>Salad Box</span> <span class="price">£2.50</span></li>
+                            <li><span>Spicy Rice Box (R/L/XL)</span> <span class="price">£2.50+</span></li>
+                            <li><span>Paratha (2)</span> <span class="price">£2.50</span></li>
+                            <li><span>Chips</span> <span class="price">£1.50</span></li>
+                            <li><span>Half Rice | Half Chips</span> <span class="price">£4.00</span></li>
+                        </ul>
+                    </div>
+                    <div class="step-box anti-gravity">
+                        <div class="step-title">Step 2 - Choose Your Mains</div>
+                        <ul>
+                            <li><span>3 Monkeys Original Jerk</span> <span class="price">£4.00+</span></li>
+                            <li><span>Grilled Beef Steak</span> <span class="price">£5.00+</span></li>
+                            <li><span>Seekh Kebab</span> <span class="price">£4.50</span></li>
+                            <li><span>Spicy South African Sausage</span> <span class="price">£3.50</span></li>
+                            <li><span>Fried Fish (Crispy Batter)</span> <span class="price">£4.50</span></li>
+                            <li><span>Grilled Halloumi (V)</span> <span class="price">£3.50</span></li>
+                            <li><span>Falafel (V) / Vegan Kebab</span> <span class="price">£3.50</span></li>
+                        </ul>
+                    </div>
+                    <div class="step-box anti-gravity">
+                        <div class="step-title">Step 3 - Flavour Kicks & Extras</div>
+                        <div class="flavours-list">
+                            <span class="badge-flavour">1. Portuguese Peri Peri</span>
+                            <span class="badge-flavour">2. Mexican Sizzler</span>
+                            <span class="badge-flavour">3. Korean BBQ</span>
+                            <span class="badge-flavour">4. Tikka Masala</span>
+                            <span class="badge-flavour">5. Caribbean BBQ</span>
+                        </div>
+                        <p style="color: #aeb4c5; font-size: 0.9rem; line-height: 1.5; margin-top: 1rem;">
+                            <strong>Extras (£1.00 each):</strong> Fried Egg, Halloumi, Turkey Rashers, Hash Brown, Spicy
+                            Sausage, Grated Cheese
                         </p>
                     </div>
-
-                    <div class="meal-deal-addon">Make it a meal (Chips & Drink) + £2.00</div>
                 </div>
 
-                <!-- Breakfast -->
-                <div class="menu-category">
-                    <h3>Breakfast Menu (Served till 11)</h3>
+                <!-- Secondary Menus -->
+                <div class="other-menus-grid">
+                    <!-- Signatures -->
+                    <div class="menu-category">
+                        <h3>Signature Burgers</h3>
 
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">Full Monkey</span>
-                            <span class="menu-item-price">£8.00</span>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">3 Monkeys Classic</span>
+                                <span class="menu-item-price">£4.50</span>
+                            </div>
+                            <p class="menu-item-desc">Beef smash burger, American cheese, salad, caramelised onions &
+                                special sauce.</p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="4">Add</button>
                         </div>
-                        <p class="menu-item-desc">2 Lamb sausages, 2 eggs, Beans, Hashbrowns, Turkey Bacon, polony,
-                            Toast.</p>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">Jerk Chicken Burger</span>
+                                <span class="menu-item-price">£5.50</span>
+                            </div>
+                            <p class="menu-item-desc">Original jerk chicken, brioche bun, salad, cheese & secret sauce.
+                            </p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="6">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">Louisiana Burger</span>
+                                <span class="menu-item-price">£5.50</span>
+                            </div>
+                            <p class="menu-item-desc">Louisiana spice blend, toasted bun, salad, cheese & special sauce.
+                            </p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="6">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">Classic Beef Dog</span>
+                                <span class="menu-item-price">£5.00</span>
+                            </div>
+                            <p class="menu-item-desc">American beef dog, cheese, salsa, onions & special sauce on
+                                brioche.
+                            </p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="4">Add</button>
+                        </div>
+
+                        <div class="meal-deal-addon">Make it a meal (Chips & Drink) + £2.00</div>
                     </div>
 
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">Eggs Benny</span>
-                            <span class="menu-item-price">£7.00</span>
+                    <!-- Breakfast -->
+                    <div class="menu-category" data-category="Breakfast">
+                        <h3>Breakfast Menu (Served till 11)</h3>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">Full Monkey Breakfast</span>
+                                <span class="menu-item-price">£8.00</span>
+                            </div>
+                            <p class="menu-item-desc">2 Lamb sausages, 2 eggs, Beans, Hashbrowns, Turkey Bacon, polony,
+                                Toast.</p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="1">Add</button>
                         </div>
-                        <p class="menu-item-desc">Toasted muffin, hashbrowns, fried eggs with Turkey bacon or sausage &
-                            hollandaise.</p>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">The Muffin Man</span>
+                                <span class="menu-item-price">£6.50</span>
+                            </div>
+                            <p class="menu-item-desc">Toasted muffin, hashbrowns, fried eggs with Turkey bacon or
+                                sausage &
+                                hollandaise.</p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="3">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">Bombay Spiced Eggs</span>
+                                <span class="menu-item-price">£6.00</span>
+                            </div>
+                            <p class="menu-item-desc">Asian style omelette, green chillies, cheese & fresh coriander.
+                            </p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="2">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title">Menemen (V)</span>
+                                <span class="menu-item-price">£6.00</span>
+                            </div>
+                            <p class="menu-item-desc">Scrambled eggs with onions, tomatoes, peppers & turkish spices.
+                            </p>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="5">Add</button>
+                        </div>
                     </div>
 
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">Bombay Spiced Eggs</span>
-                            <span class="menu-item-price">£6.00</span>
-                        </div>
-                        <p class="menu-item-desc">Asian style omelette, green chillies, cheese & fresh coriander.</p>
-                    </div>
+                    <!-- Sides -->
+                    <div class="menu-category" data-category="Sides &amp; Drinks">
+                        <h3>Sides &amp; Extras</h3>
 
-                    <div class="menu-item">
-                        <div class="menu-item-header">
-                            <span class="menu-item-title">Turkish Eggs (Menemen)</span>
-                            <span class="menu-item-price">£6.00</span>
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Chips</span><span class="menu-item-price">£2.00</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
                         </div>
-                        <p class="menu-item-desc">Scrambled eggs with onions, tomatoes, peppers & turkish spices.</p>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Salt &amp; Pepper Chips</span><span class="menu-item-price">£3.00</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Halloumi Fries</span><span class="menu-item-price">£3.50</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="5">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Sweet Potato Fries</span><span class="menu-item-price">£3.00</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Chicken Nuggets (6)</span><span class="menu-item-price">£4.00</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="1">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Chilli Cheese Nugs</span><span class="menu-item-price">£3.50</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="1">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Bag of Hash</span><span class="menu-item-price">£2.00</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header"><span class="menu-item-title">Tea &amp; Coffee</span><span class="menu-item-price">£1.50</span></div>
+                            <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Sides -->
-                <div class="menu-category">
-                    <h3>Sides & Extras</h3>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div>
-                            <div class="menu-item-header"><span class="menu-item-title">Chips</span><span
-                                    class="menu-item-price">£2.00</span></div>
-                            <div class="menu-item-header"><span class="menu-item-title">Salt & Pepper Chips</span><span
-                                    class="menu-item-price">£3.00</span></div>
-                            <div class="menu-item-header"><span class="menu-item-title">Halloumi Fries</span><span
-                                    class="menu-item-price">£3.50</span></div>
-                            <div class="menu-item-header"><span class="menu-item-title">Sweet Potato Fries</span><span
-                                    class="menu-item-price">£3.00</span></div>
+                <!-- Combos Section -->
+                <div class="menu-board-header" style="margin-top: 6rem;">
+                    <h2>Our Best Combos</h2>
+                    <p>Great value, perfect pairings.</p>
+                </div>
+                <div class="combo-grid">
+                    <div class="combo-card">
+                        <div class="combo-badge">Student Favorite</div>
+                        <h3>Student Sizzler Combo</h3>
+                        <p>Sizzler Wrap + Chips + Cold Drink. The ultimate UCLan lunch!</p>
+                        <div class="combo-footer">
+                            <span class="price">£8.00</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="combo-1">Add to Cart</button>
                         </div>
-                        <div>
-                            <div class="menu-item-header"><span class="menu-item-title">Chicken Nuggets (6)</span><span
-                                    class="menu-item-price">£3.00</span></div>
-                            <div class="menu-item-header"><span class="menu-item-title">Chilli Cheese Nugs</span><span
-                                    class="menu-item-price">£3.50</span></div>
-                            <div class="menu-item-header"><span class="menu-item-title">Bag of Hash</span><span
-                                    class="menu-item-price">£2.00</span></div>
-                            <div class="menu-item-header"><span class="menu-item-title">Tea & Coffee</span><span
-                                    class="menu-item-price">£1.50</span></div>
+                    </div>
+                    <div class="combo-card">
+                        <div class="combo-badge">Best Seller</div>
+                        <h3>Legendary Duo</h3>
+                        <p>Portuguese Chicken & Rice Box + Any Drink. Pure satisfaction.</p>
+                        <div class="combo-footer">
+                            <span class="price">£11.00</span>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="combo-2">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <!-- Info / About Section -->
-        <section class="info-section">
-            <div class="info-container">
-                <h2>Good to Know</h2>
+        <!-- Section: Contact & Socials -->
+        <section class="footer-section" id="find-us" style="padding: 6rem 5%; background-color: var(--accent-brand);">
+            <div class="footer-container" style="max-width: 1300px; margin: 0 auto;">
+                <h2 style="text-align: center; margin-bottom: 4rem; color: var(--text-light); font-size: 3rem;">Good to Know</h2>
                 <div class="info-grid">
                     <div class="info-card">
                         <h4>Service Options</h4>
@@ -381,12 +451,14 @@
                             </div>
                         </div>
 
-                        <div class="action-buttons" style="margin-top: 2rem; gap: 1.5rem;">
+                        <div class="contact-details" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.8rem; font-size: 1.1rem;">
+                            <p>🐒 <strong>UK (Preston):</strong> <a href="tel:+441772562866" style="color:var(--accent-brand); text-decoration:none; font-weight:700;">+44 1772 562 866</a></p>
+                            <p>🐒 <strong>AUS (Brisbane):</strong> <a href="tel:+61738446227" style="color:var(--accent-brand); text-decoration:none; font-weight:700;">+61 7 3844 6227</a></p>
+                            <p>🐒 <strong>Email:</strong> <a href="mailto:hello@3monkeys.cafe" style="color:var(--accent-brand); text-decoration:none; font-weight:700;">hello@3monkeys.cafe</a></p>
+                        </div>
+                        <div class="action-buttons" style="margin-top: 1.5rem; gap: 1.5rem;">
                             <a href="https://maps.app.goo.gl/ryK8KubEFWiHVJ9TA" target="_blank" class="btn btn-primary">
                                 <span class="btn-text">Get Directions</span>
-                            </a>
-                            <a href="tel:+441772562866" class="btn btn-secondary">
-                                <span class="btn-text">Contact Us</span>
                             </a>
                         </div>
                     </div>
@@ -402,7 +474,7 @@
                 <!-- Google Reviews Widget -->
                 <div class="reviews-block">
                     <div class="reviews-overview">
-                        <h2>4.4 <span>★★★★½</span></h2>
+                        <h2>4.4 <span>★★★★</span></h2>
                         <p style="color:var(--text-muted); font-weight: 500;">Based on 360 reviews &middot; Google Maps
                         </p>
                     </div>
@@ -451,22 +523,92 @@
                     </div>
                 </div>
 
+                <!-- Reservation System -->
+                <div class="reviews-block" id="reserve" style="margin-top: 6rem;">
+                    <div class="reviews-overview">
+                        <h2>Book a Table 📅</h2>
+                        <p style="color:var(--text-muted); font-weight: 500;">Secure your spot at The 3 Monkeys</p>
+                    </div>
+
+                    <div class="reservation-grid">
+                        <div class="reservation-form visual-card">
+                            <div class="calendar-picker">
+                                <div class="calendar-header">
+                                    <span id="monthYear">March 2026</span>
+                                </div>
+                                <div class="calendar-days" id="calendarDays">
+                                    <!-- Days populated by JS -->
+                                </div>
+                            </div>
+                            <div class="time-slots" id="timeSlots">
+                                <button class="slot-btn">12:00 PM</button>
+                                <button class="slot-btn">1:00 PM</button>
+                                <button class="slot-btn active" data-time="18:00">6:00 PM</button>
+                                <button class="slot-btn" data-time="19:30">7:30 PM</button>
+                            </div>
+                            <div class="guest-counter">
+                                <label>Guests:</label>
+                                <div class="counter-btns">
+                                    <button class="cnt-btn" id="guestDec">-</button>
+                                    <span id="guestCount">2</span>
+                                    <button class="cnt-btn" id="guestInc">+</button>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" style="width: 100%;" id="confirmReserveBtn">Confirm
+                                Reservation</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
     </div>
 
-    <!-- Sticky Mobile CTA -->
-    <div class="mobile-cta-bar">
-        <a href="tel:+441772562866" class="cta-item">
-            <span>Contact</span>
+    <!-- Mobile Bottom Navigation (Native App Style) -->
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-item active" data-section="home">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
         </a>
-        <a href="https://maps.app.goo.gl/ryK8KubEFWiHVJ9TA" target="_blank" class="cta-item">
-            <span>Directions</span>
+        <a href="#menu" class="nav-item" data-section="menu">
+            <span class="nav-icon">📖</span>
+            <span class="nav-label">Menu</span>
         </a>
-        <a href="#menu" class="cta-item primary-cta">
-            <span>Order</span>
+        <a href="#chat" class="nav-item chat-trigger" id="mobileChatBtn">
+            <div class="nav-chat-icon">🐵</div>
+            <span class="nav-label">Chat</span>
         </a>
+        <a href="#cart" class="nav-item" id="mobileCartBtn">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Cart</span>
+            <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+        <a href="#reserve" class="nav-item" data-section="reserve">
+            <span class="nav-icon">📅</span>
+            <span class="nav-label">Book</span>
+        </a>
+    </nav>
+
+    <!-- Cart Drawer -->
+    <div id="cartDrawer" class="cart-drawer">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart 🐵</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Items populated by JS -->
+                <div class="empty-cart-msg">Your belly is empty! 🍌 Add some food?</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotalValue">£0.00</span>
+                </div>
+                <button class="btn btn-primary checkout-btn" id="toCheckoutBtn">Secure Checkout</button>
+            </div>
+        </div>
     </div>
 
     <!-- Order Modal -->
@@ -477,8 +619,8 @@
             <p class="modal-subtitle">The 3 Monkeys Sandwich Bar</p>
 
             <div class="order-type-toggle">
-                <button class="type-btn active"><span>✕ </span>Pick-up</button>
-                <button class="type-btn">Delivery</button>
+                <button class="type-btn active" data-type="pickup"><span>✕ </span>Pick-up</button>
+                <button class="type-btn" data-type="delivery">Delivery</button>
             </div>
 
             <div class="place-order-row">
@@ -520,70 +662,142 @@
         </div>
     </div>
 
-    <script>
-        const orderBtn = document.getElementById('orderHeroBtn');
-        const orderModal = document.getElementById('orderModal');
-        const modalClose = document.querySelector('.modal-close');
-
-        if (orderBtn && orderModal) {
-            orderBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                orderModal.classList.add('active');
-            });
-            modalClose.addEventListener('click', () => {
-                orderModal.classList.remove('active');
-            });
-            orderModal.addEventListener('click', (e) => {
-                if (e.target === orderModal) {
-                    orderModal.classList.remove('active');
-                }
-            });
-        }
-
-        // Toggle Logic for Pick-up / Delivery
-        const typeBtns = document.querySelectorAll('.type-btn');
-        typeBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const currentActive = document.querySelector('.type-btn.active');
-                if (currentActive !== btn) {
-                    currentActive.classList.remove('active');
-                    const cross = currentActive.querySelector('span');
-                    if (cross) cross.remove();
-
-                    btn.classList.add('active');
-                    btn.insertAdjacentHTML('afterbegin', '<span>✕ </span>');
-                }
-            });
-        });
-    </script>
-    <!-- AI Chat Bot Widget -->
-    <div class="chat-widget">
-        <div class="chat-window" id="chatWindow">
-            <div class="chat-header">
-                <h3>3 Monkeys Genie 🐒</h3>
-                <button class="close-chat" id="closeChat">&times;</button>
+    <!-- Payment & Checkout Modal -->
+    <div id="checkoutModal" class="modal-overlay">
+        <div class="modal-content checkout-step">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Confirm & Pay</h3>
+            <div class="checkout-summary" id="checkoutSummary">
+                <!-- Summary items here -->
             </div>
-            <div class="messages-area" id="messagesArea">
-                <div class="message bot">
-                    Hello! Welcome to The 3 Monkeys Café. I'm your AI assistant. How can I help you today? 🐒
+            <div class="payment-section">
+                <h4>Payment Method</h4>
+                <div class="payment-options">
+                    <label class="payment-card active">
+                        <input type="radio" name="payMethod" checked>
+                        <span>💳 Credit / Debit Card</span>
+                    </label>
+                    <label class="payment-card">
+                        <input type="radio" name="payMethod">
+                        <span>📱 Apple/Google Pay</span>
+                    </label>
                 </div>
             </div>
-            <div class="typing-indicator" id="typingIndicator">
-                <div class="typing-dot"></div>
-                <div class="typing-dot"></div>
-                <div class="typing-dot"></div>
+            <button class="btn btn-primary pay-now-btn" id="payNowBtn">Pay Now (£0.00)</button>
+            <p class="secure-text">🔒 100% Encrypted & Secure Checkout</p>
+        </div>
+    </div>
+
+    <!-- Login / Magic Link Modal -->
+    <div id="loginModal" class="modal-overlay">
+        <div class="modal-content login-box">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Welcome Back 🐵</h3>
+            <p class="modal-subtitle">Sign in instantly with your <strong>3 Monkeys Orbit</strong> — effortless access, no passwords needed.</p>
+
+            <div id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <button class="btn btn-primary magic-link-btn" id="sendMagicLink">SEND 3 MONKEYS ORBIT</button>
             </div>
-            <div class="chat-input-area">
-                <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
-                <button class="send-btn" id="sendBtn">
-                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+
+            <div id="loginSuccess" style="display: none;">
+                <div class="success-icon">✨</div>
+                <h4>Orbit Sent!</h4>
+                <p>Check your email (demo) to blast off instantly.</p>
+                <button class="btn btn-secondary" id="simulateLogin">Simulate Login</button>
+            </div>
+
+            <div id="logoutSection" style="display: none; padding-top: 1rem;">
+                <button class="btn btn-secondary" id="logoutBtn" style="width: 100%;">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container for Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Premium Lil' MonKey AI Assistant -->
+    <div class="ai-assistant-container" id="aiAssistant">
+        <div class="chat-panel">
+            <div class="chat-header">
+                <div class="bot-identity">
+                    <div class="avatar-wrapper">
+                        <span class="avatar-emoji">🐵</span>
+                        <span class="status-dot"></span>
+                    </div>
+                    <div class="identity-info">
+                        <h3>Lil' MonKey</h3>
+                        <p id="botStatus">Online & Ready to help</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <select id="langSelect" class="lang-switcher" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                    </select>
+                    <button class="close-assistant" id="closeAssistant" aria-label="Close Assistant">&times;</button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="messagesArea">
+                <div class="message bot">
+                    <div class="msg-content">
+                        Hey! I’m **Lil' MonKey** 🐵 Your premium café guide. I can help you browse our menu, find spicy
+                        or veg options, discover combos, and even simulate an order!
+                    </div>
+                </div>
+
+                <!-- Persistent Suggestion Chips -->
+                <div class="suggestion-chips" id="quickActions">
+                    <button class="chip" data-action="View Menu">🍽️ Menu</button>
+                    <button class="chip" data-action="Bestsellers">🔥 Bestsellers</button>
+                    <button class="chip" data-action="Veg Options">🌿 Veg Only</button>
+                    <button class="chip" data-action="Spicy Items">🌶️ Spicy</button>
+                    <button class="chip" data-action="Combos">🍱 Best Combos</button>
+                    <button class="chip" data-action="Recommendations">💡 Suggest me</button>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div class="chat-controls">
+                <div class="input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Ask me anything..." aria-label="Type your message">
+                    <button id="micBtn" class="control-btn mic-btn" title="Voice Input">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+                            <path
+                                d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <button id="sendBtn" class="send-btn" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
                     </svg>
                 </button>
             </div>
+
+            <div class="voice-settings">
+                <label class="switch">
+                    <input type="checkbox" id="voiceToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Voice Replies</span>
+            </div>
         </div>
-        <div class="chat-bubble anti-gravity" id="chatBubble">
-            <div class="icon">💬</div>
+
+        <!-- Desktop Launcher (Hidden if integrated panel is open) -->
+        <div class="desktop-chat-launcher" id="chatBubble">
+            <span class="launcher-icon">🐵</span>
+            <span class="launcher-text">Ask Lil' MonKey</span>
         </div>
     </div>
 

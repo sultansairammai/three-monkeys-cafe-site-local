@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Monkeys Sandwich Bar - Preston</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Legendary chicken and rice takeaway in Preston serving UCLan for a decade.">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="https://img.freepik.com/free-vector/monkey-logo-concept-set_23-2148560012.jpg?t=st=1742407283~exp=1742410883~hmac=5c68f6d2f5a896d8e8b8c1a1e1b1b1b1b1b1b1b1b1b1&w=740" alt="3 Monkeys Logo">
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#reserve">Book Table</a>
+                <a href="#find-us">Visit</a>
+                <div class="header-auth" id="headerAuth">
+                    <button class="btn btn-secondary login-trigger-btn" id="headerLoginBtn">Login</button>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-body-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section section-yellow" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <h1 class="heading-pop">PRESTON'S<br>LEGENDARY<br>CHICKEN</h1>
+                    <p>Serving UCLan students and locals for a decade. Home of the Portuguese Chicken, Sizzler Wraps, and the iconic Special Sauce.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" id="orderHeroBtn">Order Now</button>
+                        <a href="#menu" class="btn btn-outline" style="margin-left: 1rem;">View Menu</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal delay-1">
+                    <img src="https://img.freepik.com/free-photo/view-delicious-chicken-rice-ready-be-served_23-2149174175.jpg?t=st=1742407283~exp=1742410883~hmac=5c68f6d2f5a896d8e8b8c1a1e1b1b1b1b1b1b1b1b1b1&w=740" alt="Portuguese Chicken" class="floating">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section section-white" id="about">
+            <div class="container text-center">
+                <h2 class="reveal heading-pop" style="color: var(--brand-red); margin-bottom: 4rem;">WHY WE'RE FAMOUS</h2>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="icon">🍱</div>
+                        <h3>LEGENDARY BOXES</h3>
+                        <p>Our Portuguese chicken and rice boxes have been a Preston staple for over 10 years.</p>
+                    </div>
+                    <div class="service-card reveal delay-1">
+                        <div class="icon">🔥</div>
+                        <h3>SIZZLER WRAPS</h3>
+                        <p>Toasted to perfection with our secret spice blend and fresh crunchy salad.</p>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <div class="icon">✨</div>
+                        <h3>SPECIAL SAUCE</h3>
+                        <p>The legendary 3 Monkeys sauce. Often imitated, never duplicated.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Board Section -->
+        <section class="menu-board-section section-red" id="menu">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 5rem;">
+                    <h2 class="reveal heading-pop">THE MENU BOARD</h2>
+                    <p class="reveal delay-1" style="color: white; font-weight: 600;">Authentic Fusion Flavors from Preston</p>
+                </div>
+
+                <div class="visual-favorites">
+                    <!-- Portuguese Chicken & Rice -->
+                    <div class="menu-card reveal" data-id="p1">
+                        <div class="card-img-wrapper">
+                            <span class="badge">BEST SELLER</span>
+                            <img src="https://img.freepik.com/free-photo/view-delicious-chicken-rice-ready-be-served_23-2149174175.jpg?t=st=1742407283~exp=1742410883~hmac=5c68f6d2f5a896d8e8b8c1a1e1b1b1b1b1b1b1b1b1b1&w=740" alt="Portuguese Chicken">
+                        </div>
+                        <div class="card-content">
+                            <h4>Portuguese Chicken & Rice</h4>
+                            <div class="price">£6.50</div>
+                            <button class="btn btn-yellow add-to-cart-btn" data-id="p1" style="width: 100%; margin-top: 1rem;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Sizzler Wrap -->
+                    <div class="menu-card reveal delay-1" data-id="p2">
+                        <div class="card-img-wrapper">
+                            <img src="https://img.freepik.com/free-photo/delicious-grilled-chicken-wrap-with-vegetables_23-2148763574.jpg?w=740" alt="Sizzler Wrap">
+                        </div>
+                        <div class="card-content">
+                            <h4>The Sizzler Wrap</h4>
+                            <div class="price">£5.50</div>
+                            <button class="btn btn-yellow add-to-cart-btn" data-id="p2" style="width: 100%; margin-top: 1rem;">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- 3 Monkeys Special -->
+                    <div class="menu-card reveal delay-2" data-id="p3">
+                        <div class="card-img-wrapper">
+                            <span class="badge">CHEF'S CHOICE</span>
+                            <img src="https://img.freepik.com/free-photo/gourmet-chicken-burger-with-fries-soda_23-2148189689.jpg?w=740" alt="Burger Meal">
+                        </div>
+                        <div class="card-content">
+                            <h4>3 Monkeys Special</h4>
+                            <div class="price">£9.50</div>
+                            <button class="btn btn-yellow add-to-cart-btn" data-id="p3" style="width: 100%; margin-top: 1rem;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Build Your Own (Step Process) -->
+        <section class="section-yellow" id="build-own" style="border-bottom: var(--border-thick);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 5rem;">
+                    <h2 class="reveal heading-pop" style="color: var(--brand-red);">3-STEP PROCESS</h2>
+                    <p class="reveal delay-1" style="color: black; font-weight: 700;">Build your legendary meal box or wrap.</p>
+                </div>
+
+                <div class="menu-steps-container">
+                    <div class="card-pop reveal">
+                        <div class="step-title" style="font-family: 'Bangers', sans-serif; font-size: 1.8rem; border-bottom: 2px dashed black; margin-bottom: 1rem;">STEP 1: BASE</div>
+                        <ul style="list-style: none;">
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 600;">Sub Roll <span>£1.50</span></li>
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 600;">Tortilla Wrap <span>£1.50</span></li>
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 600;">Spicy Rice Box <span>£2.50</span></li>
+                        </ul>
+                    </div>
+                    <div class="card-pop reveal delay-1">
+                        <div class="step-title" style="font-family: 'Bangers', sans-serif; font-size: 1.8rem; border-bottom: 2px dashed black; margin-bottom: 1rem;">STEP 2: MAIN</div>
+                        <ul style="list-style: none;">
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 600;">Original Jerk <span>£4.00</span></li>
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 600;">Beef Steak <span>£5.00</span></li>
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 600;">Fried Fish <span>£4.50</span></li>
+                        </ul>
+                    </div>
+                    <div class="card-pop reveal delay-2">
+                        <div class="step-title" style="font-family: 'Bangers', sans-serif; font-size: 1.8rem; border-bottom: 2px dashed black; margin-bottom: 1rem;">STEP 3: KICK</div>
+                        <div class="flavours-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="badge" style="background: var(--brand-red); color: white; position: static;">Peri Peri</span>
+                            <span class="badge" style="background: black; color: white; position: static;">Mexican</span>
+                            <span class="badge" style="background: var(--brand-red); color: white; position: static;">Korean BBQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+            <!-- Secondary Menus -->
+            <div class="other-menus-grid">
+                <!-- Signatures -->
+                <div class="menu-category">
+                    <h3>Signature Burgers</h3>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-title">3 Monkey        <!-- Secondary Menus Section -->
+        <section class="section-white" id="more-menu">
+            <div class="container overflow-hidden">
+                <div class="other-menus-grid">
+                    <!-- Burgers -->
+                    <div class="menu-category reveal">
+                        <h3 class="heading-pop" style="color: var(--brand-red); -webkit-text-stroke: 0.5px black;">SIGNATURE BURGERS</h3>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title" style="font-weight: 800;">3 Monkeys Classic</span>
+                                <span class="price" style="font-family: 'Bangers'; font-size: 1.2rem;">£4.50</span>
+                            </div>
+                            <p class="menu-item-desc">Beef smash burger, American cheese, salad & special sauce.</p>
+                            <button class="btn btn-outline btn-sm add-to-cart-btn" data-id="p4" style="padding: 5px 15px; font-size: 0.9rem;">+ Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="menu-item-title" style="font-weight: 800;">Jerk Chicken Burger</span>
+                                <span class="price" style="font-family: 'Bangers'; font-size: 1.2rem;">£5.50</span>
+                            </div>
+                            <p class="menu-item-desc">Original jerk chicken, brioche bun, salad & secret sauce.</p>
+                            <button class="btn btn-outline btn-sm add-to-cart-btn" data-id="p6" style="padding: 5px 15px; font-size: 0.9rem;">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- Sides -->
+                    <div class="menu-category reveal delay-1">
+                        <h3 class="heading-pop" style="color: var(--brand-red); -webkit-text-stroke: 0.5px black;">SIDES & EXTRAS</h3>
+                        <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Bowl of Chips</span>
+                            <button class="btn btn-outline btn-sm add-to-cart-btn" data-id="p10" style="padding: 5px 15px; font-size: 0.9rem;">£2.00</button>
+                        </div>
+                        <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Halloumi Fries</span>
+                            <button class="btn btn-outline btn-sm add-to-cart-btn" data-id="p5" style="padding: 5px 15px; font-size: 0.9rem;">£3.50</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Table Section -->
+        <section class="section-red" id="reserve">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 class="reveal heading-pop">RESERVE A SPOT</h2>
+                    <p class="reveal delay-1" style="font-weight: 600;">Secure your place at the heart of Preston flavor.</p>
+                </div>
+                
+                <div class="reservation-grid reveal">
+                    <div class="card-pop" style="max-width: 600px; margin: 0 auto; color: black;">
+                        <div class="calendar-picker">
+                            <div id="calendarDays" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-bottom: 1rem;">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                        <div class="guest-counter" style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin: 2rem 0;">
+                            <button class="btn btn-outline" id="guestDec">-</button>
+                            <span id="guestCount" style="font-size: 2rem; font-weight: 800;">2</span>
+                            <button class="btn btn-outline" id="guestInc">+</button>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;" id="confirmReserveBtn">CONFIRM BOOKING</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Find Us -->
+        <section class="section-white" id="find-us">
+            <div class="container hero-grid">
+                <div class="reveal">
+                    <h2 class="heading-pop" style="color: var(--brand-red); margin-bottom: 2rem;">STREET FOOD HUB</h2>
+                    <p style="font-weight: 600; margin-bottom: 1.5rem;">📍 16a Adelphi St, Preston PR1 7BE</p>
+                    <p style="margin-bottom: 2.5rem;">The staple diet of UCLan students and Preston locals since 2014. Simple, fresh, Intense.</p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="tel:+441772562866" class="btn btn-primary">CALL US</a>
+                        <a href="#" class="btn btn-yellow">DIRECTIONS</a>
+                    </div>
+                </div>
+                <div class="map-container reveal delay-1" style="border: var(--border-thick); border-radius: 12px; height: 350px; overflow: hidden; box-shadow: var(--shadow-offset);">
+                    <iframe src="https://maps.google.com/maps?q=The%203%20Monkeys%20Sandwich%20Bar,%2016a%20Adelphi%20St,%20Preston&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modals (Updated Styles) -->
+    <div id="cartDrawer" class="cart-drawer" style="background: var(--brand-cream); border-left: var(--border-thick);">
+        <div class="cart-header" style="background: var(--brand-red); color: white; border-bottom: var(--border-thick); padding: 1.5rem;">
+            <h3 class="heading-pop" style="font-size: 2rem;">YOUR BOX 🐵</h3>
+            <button class="close-cart" id="closeCart" style="font-size: 2.5rem; color: white;">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems" style="padding: 2rem;">
+            <!-- JS -->
+        </div>
+        <div class="cart-footer" style="padding: 2rem; border-top: var(--border-thick); background: white;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem; font-family: 'Bangers'; font-size: 1.8rem;">
+                <span>TOTAL</span>
+                <span id="cartSubtotalValue">£0.00</span>
+            </div>
+            <button class="btn btn-primary" id="toCheckoutBtn" style="width: 100%;">SECURE CHECKOUT</button>
+        </div>
+    </div>
+cart-content">
+            <div class="cart-header">
+                <h3>Your Cart 🐵</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Items populated by JS -->
+                <div class="empty-cart-msg">Your belly is empty! 🍌 Add some food?</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotalValue">£0.00</span>
+                </div>
+                <button class="btn btn-primary checkout-btn" id="toCheckoutBtn">Secure Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Order online</h3>
+            <p class="modal-subtitle">The 3 Monkeys Sandwich Bar</p>
+
+            <div class="order-type-toggle">
+                <button class="type-btn active" data-type="pickup"><span>✕ </span>Pick-up</button>
+                <button class="type-btn" data-type="delivery">Delivery</button>
+            </div>
+
+            <div class="place-order-row">
+                <span>Place order with:</span>
+                <span class="info-icon">ⓘ</span>
+            </div>
+
+            <div class="delivery-partners">
+                <a href="https://the3monkeyspreston.com/" class="partner-card" target="_blank">
+                    <div class="partner-icon icon-yoyo">YOYO</div>
+                    <div class="partner-info">
+                        <h4>OrderYOYO</h4>
+                        <p>Ready in 15 min</p>
+                        <span class="partner-tag">Business website</span>
+                    </div>
+                    <span class="chevron">›</span>
+                </a>
+
+                <a href="https://www.ubereats.com/gb/store/3-monkeys-sandwich-bar/Qg6IbbSiWOCdxIo5ldspIw?diningMode=PICKUP"
+                    class="partner-card" target="_blank">
+                    <div class="partner-icon icon-uber">Uber<br>Eats</div>
+                    <div class="partner-info">
+                        <h4>UberEats</h4>
+                        <p>No fee<br>Ready in 5–20 min</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </a>
+
+                <a href="https://www.just-eat.co.uk/restaurants-the-3-monkeys-sandwich-bar-preston/menu?serviceType=collection&utm_source=google&utm_medium=organic&utm_campaign=foodorder"
+                    class="partner-card" target="_blank">
+                    <div class="partner-icon icon-justeat">🏠</div>
+                    <div class="partner-info">
+                        <h4>Just Eat</h4>
+                        <p>Ready in 10–20 min</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment & Checkout Modal -->
+    <div id="checkoutModal" class="modal-overlay">
+        <div class="modal-content checkout-step">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Confirm & Pay</h3>
+            <div class="checkout-summary" id="checkoutSummary">
+                <!-- Summary items here -->
+            </div>
+            <div class="payment-section">
+                <h4>Payment Method</h4>
+                <div class="payment-options">
+                    <label class="payment-card active">
+                        <input type="radio" name="payMethod" checked>
+                        <span>💳 Credit / Debit Card</span>
+                    </label>
+                    <label class="payment-card">
+                        <input type="radio" name="payMethod">
+                        <span>📱 Apple/Google Pay</span>
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-primary pay-now-btn" id="payNowBtn">Pay Now (£0.00)</button>
+            <p class="secure-text">🔒 100% Encrypted & Secure Checkout</p>
+        </div>
+    </div>
+
+    <!-- Login / Magic Link Modal -->
+    <div id="loginModal" class="modal-overlay">
+        <div class="modal-content login-box">
+            <button class="modal-close">&times;</button>
+            <h3 class="modal-title">Welcome Back 🐵</h3>
+            <p class="modal-subtitle">Sign in to sync your cart and past orders.</p>
+            
+            <div id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <button class="btn btn-primary magic-link-btn" id="sendMagicLink">Send Magic Link</button>
+            </div>
+
+            <div id="loginSuccess" style="display: none;">
+                <div class="success-icon">✨</div>
+                <h4>Link Sent!</h4>
+                <p>Check your email (demo) to log in instantly.</p>
+                <button class="btn btn-secondary" id="simulateLogin">Simulate Login</button>
+            </div>
+
+            <div id="logoutSection" style="display: none; padding-top: 1rem;">
+                <button class="btn btn-secondary" id="logoutBtn" style="width: 100%;">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container for Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Premium Lil' MonKey AI Assistant -->
+    <div class="ai-assistant-container" id="aiAssistant">
+        <div class="chat-panel">
+            <div class="chat-header">
+                <div class="bot-identity">
+                    <div class="avatar-wrapper">
+                        <span class="avatar-emoji">🐵</span>
+                        <span class="status-dot"></span>
+                    </div>
+                    <div class="identity-info">
+                        <h3>Lil' MonKey</h3>
+                        <p id="botStatus">Online & Ready to help</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <select id="langSelect" class="lang-switcher" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                    </select>
+                    <button class="close-assistant" id="closeAssistant" aria-label="Close Assistant">&times;</button>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="messagesArea">
+                <div class="message bot">
+                    <div class="msg-content">
+                        Hey! I’m **Lil' MonKey** 🐵 Your premium café guide. I can help you browse our menu, find spicy or veg options, discover combos, and even simulate an order! 
+                    </div>
+                </div>
+                
+                <!-- Persistent Suggestion Chips -->
+                <div class="suggestion-chips" id="quickActions">
+                    <button class="chip" data-action="View Menu">🍽️ Menu</button>
+                    <button class="chip" data-action="Bestsellers">🔥 Bestsellers</button>
+                    <button class="chip" data-action="Veg Options">🌿 Veg Only</button>
+                    <button class="chip" data-action="Spicy Items">🌶️ Spicy</button>
+                    <button class="chip" data-action="Combos">🍱 Best Combos</button>
+                    <button class="chip" data-action="Recommendations">💡 Suggest me</button>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div class="chat-controls">
+                <div class="input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Ask me anything..." aria-label="Type your message">
+                    <button id="micBtn" class="control-btn mic-btn" title="Voice Input">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+                    </button>
+                </div>
+                <button id="sendBtn" class="send-btn" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                </button>
+            </div>
+            
+            <div class="voice-settings">
+                <label class="switch">
+                    <input type="checkbox" id="voiceToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Voice Replies</span>
+            </div>
+        </div>
+        
+        <!-- Desktop Launcher (Hidden if integrated panel is open) -->
+        <div class="desktop-chat-launcher" id="chatBubble">
+            <span class="launcher-icon">🐵</span>
+            <span class="launcher-text">Ask Lil' MonKey</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav" style="border-top: var(--border-thick); background: white;">
+        <a href="#home" class="nav-item active" data-section="home">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="#menu" class="nav-item" data-section="menu">
+            <span class="nav-icon">📖</span>
+            <span class="nav-label">Menu</span>
+        </a>
+        <a href="#chat" class="nav-item chat-trigger" id="mobileChatBtn">
+            <div class="nav-chat-icon" style="background: var(--brand-red); border: 2px solid black; box-shadow: 2px 2px 0 black;">🐵</div>
+            <span class="nav-label">Chat</span>
+        </a>
+        <a href="#cart" class="nav-item" id="mobileCartBtn">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Cart</span>
+            <span class="cart-badge" id="cartBadge" style="background: var(--brand-red); border: 1.5px solid black;">0</span>
+        </a>
+        <a href="#reserve" class="nav-item" data-section="reserve">
+            <span class="nav-icon">📅</span>
+            <span class="nav-label">Book</span>
+        </a>
+    </nav>
+
+    <!-- Payment & Checkout Modal -->
+    <div id="checkoutModal" class="modal-overlay">
+        <div class="modal-content card-pop" style="width: 90%; max-width: 500px; padding: 2.5rem;">
+            <button class="modal-close" style="font-size: 2.5rem;">&times;</button>
+            <h3 class="heading-pop" style="margin-bottom: 2rem;">CHECKOUT 🍌</h3>
+            <div id="checkoutSummary" style="margin-bottom: 2rem;">
+                <!-- JS -->
+            </div>
+            <button class="btn btn-primary" id="payNowBtn" style="width: 100%;">PAY NOW</button>
+        </div>
+    </div>
+
+    <!-- AI Assistant (Pop-Art Style) -->
+    <div class="ai-assistant-container" id="aiAssistant">
+        <div class="chat-panel card-pop" style="height: 600px; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="chat-header" style="background: var(--brand-red); color: white; padding: 1.5rem; border-bottom: var(--border-thick); display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="font-size: 2rem; background: white; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border: 2px solid black;">🐵</div>
+                    <div>
+                        <h3 style="font-family: 'Bangers'; font-size: 1.5rem; letter-spacing: 1px;">Lil' MonKey</h3>
+                        <p style="font-size: 0.8rem; opacity: 0.9;">ONLINE & READY</p>
+                    </div>
+                </div>
+                <button id="closeAssistant" style="background: none; border: none; color: white; font-size: 2.5rem; cursor: pointer;">&times;</button>
+            </div>
+            <div class="chat-messages" id="messagesArea" style="flex: 1; padding: 1.5rem; overflow-y: auto; background: var(--brand-cream);">
+                <!-- Messages JS -->
+            </div>
+            <div class="chat-controls" style="padding: 1.5rem; background: white; border-top: var(--border-thick); display: flex; gap: 1rem;">
+                <input type="text" id="chatInput" placeholder="Ask me about the spicy rice..." style="flex: 1; padding: 1rem; border: var(--border-thick); font-weight: 600; outline: none;">
+                <button id="sendBtn" class="btn btn-yellow" style="padding: 1rem 1.5rem;">GO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Launcher -->
+    <div class="desktop-chat-launcher" id="chatBubble" style="background: var(--brand-red); border: var(--border-thick); box-shadow: var(--shadow-offset);">
+        <span style="font-size: 2rem;">🐵</span>
+        <span style="font-family: 'Bangers'; font-size: 1.2rem; margin-left: 0.5rem; color: white;">ASK MONKEY</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
