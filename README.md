@@ -30,10 +30,8 @@
 ### 📱 Mobile Experience
 
 <p align="center">
-  <img src="images/mobile.png" width="320" />
+  <img src="images/mobile.png" width="320" style="border-radius:12px;" />
 </p>
-
----
 
 ## ✨ Features
 
