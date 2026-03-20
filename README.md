@@ -6,7 +6,7 @@ A modern, conversion-focused redesign of the Three Monkeys Café website, built 
 
 ## 🌐 Live Demo
 
-👉 https://sultansairamuk.github.io/three-monkeys-cafe-site-local/
+👉 https://sultansairammai.github.io/three-monkeys-cafe-site-local/
 
 ---
 
