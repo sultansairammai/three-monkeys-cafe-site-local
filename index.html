@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 Monkeys Sandwich Bar - Preston</title>
     <!-- Neo-Brutalist / Pop-Art Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Legendary chicken and rice takeaway in Preston serving UCLan for a decade.">
 </head>
@@ -29,25 +31,52 @@
             <div class="header-auth" id="headerAuth">
                 <button class="btn btn-secondary login-trigger-btn" id="headerLoginBtn">Login</button>
             </div>
+            <button class="header-cart-btn" id="headerCartBtn" aria-label="Open Cart">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+                <span class="header-cart-badge" id="headerCartBadge" style="display: none;">0</span>
+            </button>
         </div>
     </nav>
 
     <div class="container">
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-content">
                 <h1>Preston's Legendary<br>Chicken & Rice</h1>
                 <p>Serving UCLan students and locals for a decade. Famous for our Portuguese Chicken, Sizzler Wraps, and
                     the iconic Special Sauce. A staple diet in Preston!</p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary btn-big" id="orderHeroBtn">
+                <div class="hero-actions"
+                    style="display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 380px;">
+                    <!-- Primary CTA -->
+                    <button class="btn btn-primary hero-cta-btn" id="orderHeroBtn" style="width: 100%;">
                         <div class="btn-shine"></div>
-                        <div class="btn-content">
-                            <span class="btn-icon">🛵</span>
-                            <span class="btn-text">Order Now</span>
-                        </div>
+                        <span class="btn-text">ORDER NOW</span>
                     </button>
+
+                    <!-- Secondary CTA -->
+                    <a href="https://the3monkeyspreston.com/order" target="_blank" class="btn btn-primary hero-cta-btn"
+                        style="width: 100%;">
+                        <span class="btn-text">WEBSITE PICKUP</span>
+                    </a>
+
+                    <!-- Tertiary CTAs -->
+                    <p class="delivery-label" style="margin-top: 0.5rem;">Or order delivery via:</p>
+
+                    <a href="https://www.ubereats.com/gb/store/3-monkeys-sandwich-bar/mR-6S_LHTN6lUjH5qK-vMw"
+                        target="_blank" rel="noopener" aria-label="Order delivery via Uber Eats (opens in new tab)"
+                        class="btn btn-primary hero-cta-btn" style="width: 100%;">
+                        <span class="btn-text">UBER EATS <span class="external-icon">↗</span></span>
+                    </a>
+
+                    <a href="https://www.just-eat.co.uk/restaurants-3monkeysspecialists-preston" target="_blank"
+                        rel="noopener" aria-label="Order delivery via Just Eat (opens in new tab)"
+                        class="btn btn-primary hero-cta-btn" style="width: 100%;">
+                        <span class="btn-text">JUST EAT <span class="external-icon">↗</span></span>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
@@ -290,42 +319,50 @@
                         <h3>Sides &amp; Extras</h3>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Chips</span><span class="menu-item-price">£2.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Chips</span><span
+                                    class="menu-item-price">£2.00</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Salt &amp; Pepper Chips</span><span class="menu-item-price">£3.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Salt &amp; Pepper
+                                    Chips</span><span class="menu-item-price">£3.00</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Halloumi Fries</span><span class="menu-item-price">£3.50</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Halloumi Fries</span><span
+                                    class="menu-item-price">£3.50</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="5">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Sweet Potato Fries</span><span class="menu-item-price">£3.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Sweet Potato Fries</span><span
+                                    class="menu-item-price">£3.00</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Chicken Nuggets (6)</span><span class="menu-item-price">£4.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Chicken Nuggets (6)</span><span
+                                    class="menu-item-price">£4.00</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="1">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Chilli Cheese Nugs</span><span class="menu-item-price">£3.50</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Chilli Cheese Nugs</span><span
+                                    class="menu-item-price">£3.50</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="1">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Bag of Hash</span><span class="menu-item-price">£2.00</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Bag of Hash</span><span
+                                    class="menu-item-price">£2.00</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
                         </div>
 
                         <div class="menu-item">
-                            <div class="menu-item-header"><span class="menu-item-title">Tea &amp; Coffee</span><span class="menu-item-price">£1.50</span></div>
+                            <div class="menu-item-header"><span class="menu-item-title">Tea &amp; Coffee</span><span
+                                    class="menu-item-price">£1.50</span></div>
                             <button class="btn btn-outline add-to-cart-btn" data-id="10">Add</button>
                         </div>
                     </div>
@@ -358,11 +395,11 @@
                 </div>
         </section>
 
-        <!-- Section: Contact & Socials -->
-        <section class="footer-section" id="find-us" style="padding: 6rem 5%; background-color: var(--accent-brand);">
-            <div class="footer-container" style="max-width: 1300px; margin: 0 auto;">
-                <h2 style="text-align: center; margin-bottom: 4rem; color: var(--text-light); font-size: 3rem;">Good to Know</h2>
-                <div class="info-grid">
+        <!-- Section: Good to Know - Horizontal Scroll -->
+        <section class="good-to-know-section" id="good-to-know">
+            <div class="good-to-know-container">
+                <h2>Good to Know</h2>
+                <div class="good-to-know-scroll">
                     <div class="info-card">
                         <h4>Service Options</h4>
                         <ul>
@@ -399,169 +436,257 @@
                             <li>🛍️ Quick Order Collection</li>
                         </ul>
                     </div>
-                </div>
+                </div> <!-- End of scroll -->
             </div>
         </section>
 
-        <!-- Find Us Section -->
-        <section class="footer-sections">
-            <div class="find-us-block" id="find-us">
+        <!-- Find Us Section - Redesigned for Dominance -->
+        <section class="footer-sections" id="find-us">
+            <div class="find-us-block">
                 <h2>Find Us</h2>
                 <div class="find-grid">
-                    <div class="location-info">
+                    <!-- Widget 1: Location & Map -->
+                    <div class="find-widget location-widget">
                         <h3>Visit Our Store</h3>
-                        <p class="address"><span style="font-size:1.2rem; margin-right:0.4rem;">📍</span> 16a Adelphi
-                            St, Preston PR1 7BE</p>
+                        <p class="address"><span class="emoji-icon">📍</span> 16a Adelphi St, Preston PR1 7BE</p>
 
-                        <div class="hours" style="margin-bottom: 2rem;">
-                            <h4><span style="font-size:1.2rem; margin-right:0.4rem;">🕒</span> Opening Hours</h4>
-                            <div class="hours-grid">
-                                <p><span>Mon–Fri:</span> 9 am – 9 pm</p>
-                                <p><span>Sat–Sun:</span> 10 am – 9 pm</p>
-                            </div>
+                        <div class="map-container-small">
+                            <iframe
+                                src="https://maps.google.com/maps?q=The%203%20Monkeys%20Sandwich%20Bar,%2016a%20Adelphi%20St,%20Preston&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="200" style="border:0; border-radius: 12px;" allowfullscreen=""
+                                loading="lazy"></iframe>
                         </div>
 
-                        <div class="price-range">
-                            <div class="price-header">
-                                <span class="cash-icon">💵</span>
-                                <div>
-                                    <p class="main-price">£1–10 per person</p>
-                                    <p class="review-count">Reported by 37 people</p>
-                                </div>
-                            </div>
-                            <div class="price-bars">
-                                <div class="price-row">
-                                    <span class="price-label">£1–10</span>
-                                    <div class="bar-bg">
-                                        <div class="bar-fill" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="price-row">
-                                    <span class="price-label">£10–20</span>
-                                    <div class="bar-bg">
-                                        <div class="bar-fill" style="width: 25%;"></div>
-                                    </div>
-                                </div>
-                                <div class="price-row">
-                                    <span class="price-label">£20–30</span>
-                                    <div class="bar-bg">
-                                        <div class="bar-fill" style="width: 8%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-details" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.8rem; font-size: 1.1rem;">
-                            <p>🐒 <strong>UK (Preston):</strong> <a href="tel:+441772562866" style="color:var(--accent-brand); text-decoration:none; font-weight:700;">+44 1772 562 866</a></p>
-                            <p>🐒 <strong>AUS (Brisbane):</strong> <a href="tel:+61738446227" style="color:var(--accent-brand); text-decoration:none; font-weight:700;">+61 7 3844 6227</a></p>
-                            <p>🐒 <strong>Email:</strong> <a href="mailto:hello@3monkeys.cafe" style="color:var(--accent-brand); text-decoration:none; font-weight:700;">hello@3monkeys.cafe</a></p>
-                        </div>
-                        <div class="action-buttons" style="margin-top: 1.5rem; gap: 1.5rem;">
-                            <a href="https://maps.app.goo.gl/ryK8KubEFWiHVJ9TA" target="_blank" class="btn btn-primary">
+                        <div class="action-buttons-widget">
+                            <a href="https://maps.app.goo.gl/ryK8KubEFWiHVJ9TA" target="_blank"
+                                class="btn btn-primary direction-btn">
                                 <span class="btn-text">Get Directions</span>
                             </a>
                         </div>
                     </div>
-                    <div class="map-container">
-                        <!-- Embed simple iframe focusing on real address -->
-                        <iframe
-                            src="https://maps.google.com/maps?q=The%203%20Monkeys%20Sandwich%20Bar,%2016a%20Adelphi%20St,%20Preston&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <!-- Widget 2: Opening Hours -->
+                    <div class="find-widget hours-widget">
+                        <div class="widget-header">
+                            <span class="emoji-icon">🕒</span>
+                            <h3>Opening Hours</h3>
+                        </div>
+                        <div class="hours-grid-premium">
+                            <div class="hours-row"><span>Monday</span><strong>9:00 - 21:00</strong></div>
+                            <div class="hours-row"><span>Tuesday</span><strong>9:00 - 21:00</strong></div>
+                            <div class="hours-row"><span>Wednesday</span><strong>9:00 - 21:00</strong></div>
+                            <div class="hours-row"><span>Thursday</span><strong>9:00 - 21:00</strong></div>
+                            <div class="hours-row"><span>Friday</span><strong>9:00 - 21:00</strong></div>
+                            <div class="hours-row highlight"><span>Saturday</span><strong>10:00 - 21:00</strong></div>
+                            <div class="hours-row highlight"><span>Sunday</span><strong>10:00 - 21:00</strong></div>
+                        </div>
+                        <div class="contact-details-mini">
+                            <p>📞 <a href="tel:+441772562866">+44 1772 562 866</a></p>
+                            <p>📧 <a href="mailto:hello@3monkeys.cafe">hello@3monkeys.cafe</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Widget 3: Pricing & Insight -->
+                    <div class="find-widget stats-widget">
+                        <div class="widget-header">
+                            <span class="emoji-icon">💵</span>
+                            <h3>Price Range</h3>
+                        </div>
+                        <div class="price-range-premium">
+                            <p class="main-price-value">£1–10 <span>per person</span></p>
+                            <p class="review-count-small">Based on verified Google Maps data</p>
+
+                            <div class="price-bars">
+                                <div class="price-row-bar">
+                                    <span class="bar-label">£1–10</span>
+                                    <div class="bar-track">
+                                        <div class="bar-progress" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="price-row-bar">
+                                    <span class="bar-label">£10–20</span>
+                                    <div class="bar-track">
+                                        <div class="bar-progress" style="width: 25%;"></div>
+                                    </div>
+                                </div>
+                                <div class="price-row-bar">
+                                    <span class="bar-label">£20+</span>
+                                    <div class="bar-track">
+                                        <div class="bar-progress" style="width: 5%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="visit-insight">
+                                <div class="insight-icon">🐒</div>
+                                <div class="insight-text">
+                                    <strong>Lil' MonKey Insight:</strong>
+                                    "Best value chicken & rice in the Preston University area!"
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            g hot and the
+            portions are massive. Only giving 4 stars because it gets quite busy at peak hours!"</p>
+    </div>
+    </div>
+    </section> <!-- End of Reviews Section -->
 
-                <!-- Google Reviews Widget -->
-                <div class="reviews-block">
-                    <div class="reviews-overview">
-                        <h2>4.4 <span>★★★★</span></h2>
-                        <p style="color:var(--text-muted); font-weight: 500;">Based on 360 reviews &middot; Google Maps
-                        </p>
-                    </div>
+    <!-- Production-Grade Reviews & Booking Section -->
+    <section id="reserve" class="reservation-section-wrapper">
+        <div class="reservation-split-view">
 
-                    <div class="reviews-grid">
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">S</div>
-                                <div class="reviewer-info">
-                                    <h4>Sarah Jenkins</h4>
-                                    <p>Local Guide &middot; 42 reviews</p>
-                                </div>
-                            </div>
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"Absolutely love the food here! The Portuguese chicken and rice is
-                                legendary for a reason. Great portions, amazing flavor, and the special sauce is
-                                unmatched. Highly recommend for students and locals alike!"</p>
-                        </div>
-
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">A</div>
-                                <div class="reviewer-info">
-                                    <h4>Ahtisham Ahmed</h4>
-                                    <p>Local Guide &middot; 26 reviews</p>
-                                </div>
-                            </div>
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"Delicious food every single time. The lady on the counter is so soft
-                                spoken and welcoming.<br><br>Meal type: Lunch"</p>
-                        </div>
-
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">M</div>
-                                <div class="reviewer-info">
-                                    <h4>Mark Davidson</h4>
-                                    <p>Local Guide &middot; 188 reviews</p>
-                                </div>
-                            </div>
-                            <div class="review-stars">★★★★☆</div>
-                            <p class="review-text">"Really solid sandwich bar! The food is always piping hot and the
-                                portions are massive. Only giving 4 stars because it gets super busy during the uni
-                                lunch rush, but it's totally worth the quick wait."</p>
+            <!-- Left: Social Proof (Reviews) -->
+            <div class="reviews-column">
+                <div class="trust-header">
+                    <div class="rating-box">
+                        <span class="rating-value">4.4</span>
+                        <div class="rating-meta">
+                            <div class="stars">★★★★☆</div>
+                            <p>300+ Happy Customers</p>
                         </div>
                     </div>
+                    <h3>What Customers Say</h3>
                 </div>
 
-                <!-- Reservation System -->
-                <div class="reviews-block" id="reserve" style="margin-top: 6rem;">
-                    <div class="reviews-overview">
-                        <h2>Book a Table 📅</h2>
-                        <p style="color:var(--text-muted); font-weight: 500;">Secure your spot at The 3 Monkeys</p>
+                <div class="reviews-compact-list">
+                    <div class="review-card-mini">
+                        <div class="user-info">
+                            <img src="https://ui-avatars.com/api/?name=Sultan+S&background=random" alt="Sultan">
+                            <div>
+                                <strong>Sultan S.</strong>
+                                <div class="stars-mini">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Best piri piri chicken in Preston. Portions are
+                            huge and always hot!"</p>
                     </div>
 
-                    <div class="reservation-grid">
-                        <div class="reservation-form visual-card">
+                    <div class="review-card-mini">
+                        <div class="user-info">
+                            <img src="https://ui-avatars.com/api/?name=UCLan+Student&background=random" alt="Student">
+                            <div>
+                                <strong>Alex M.</strong>
+                                <div class="stars-mini">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Legendary student spot. The special sauce is
+                            actually amazing. Highly recommend!"</p>
+                    </div>
+
+                    <div class="review-card-mini">
+                        <div class="user-info">
+                            <img src="https://ui-avatars.com/api/?name=Local+Guide&background=random" alt="Guide">
+                            <div>
+                                <strong>Jessica L.</strong>
+                                <div class="stars-mini">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Fast, fresh, and friendly. Perfection for a
+                            quick lunch between lectures."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Action (Booking Engine) -->
+            <div class="booking-column">
+                <div class="reservation-form-container sticky-booking">
+                    <div class="reservation-form visual-card" id="bookingApp">
+                        <!-- AI Guidance Header -->
+                        <div class="booking-ai-header">
+                            <div class="ai-avatar-mini">🐵</div>
+                            <div class="ai-speech-bubble">
+                                <p id="bookingGuidance">Hi! I'm Lil' MonKey. Join 12 others who
+                                    booked this hour!</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Select Date -->
+                        <div class="booking-step active" data-step="1">
                             <div class="calendar-picker">
                                 <div class="calendar-header">
-                                    <span id="monthYear">March 2026</span>
+                                    <h3 id="monthYear">March 2026</h3>
                                 </div>
-                                <div class="calendar-days" id="calendarDays">
-                                    <!-- Days populated by JS -->
+                                <div class="calendar-week-labels">
+                                    <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                                </div>
+                                <div class="calendar-days" id="calendarDays"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Select Time -->
+                        <div class="booking-step" data-step="2" style="display: none;">
+                            <div class="smart-time-grid">
+                                <div class="section-label">Smart Availability:</div>
+                                <div class="time-slots" id="smartTimeSlots"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Guests -->
+                        <div class="booking-step" data-step="3" style="display: none;">
+                            <div class="guest-selection-area">
+                                <div class="guest-counter-bar">
+                                    <span class="guest-label">Guests:</span>
+                                    <div class="counter-controls">
+                                        <button class="guest-btn" id="bookingGuestDec">—</button>
+                                        <span id="bookingGuestCount" class="count-value">2</span>
+                                        <button class="guest-btn" id="bookingGuestInc">+</button>
+                                    </div>
+                                </div>
+                                <div class="booking-upsell-card">
+                                    <div class="upsell-info">
+                                        <span class="upsell-icon">🪑</span>
+                                        <div>
+                                            <div class="upsell-title">Special Seating?</div>
+                                            <div class="upsell-desc">Cozy corner / window view
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="specialSeatingToggle">
+                                        <span class="slider round"></span>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="time-slots" id="timeSlots">
-                                <button class="slot-btn">12:00 PM</button>
-                                <button class="slot-btn">1:00 PM</button>
-                                <button class="slot-btn active" data-time="18:00">6:00 PM</button>
-                                <button class="slot-btn" data-time="19:30">7:30 PM</button>
-                            </div>
-                            <div class="guest-counter">
-                                <label>Guests:</label>
-                                <div class="counter-btns">
-                                    <button class="cnt-btn" id="guestDec">-</button>
-                                    <span id="guestCount">2</span>
-                                    <button class="cnt-btn" id="guestInc">+</button>
+                        </div>
+
+                        <!-- Step 4: Summary -->
+                        <div class="booking-step" data-step="4" style="display: none;">
+                            <div class="booking-summary-card">
+                                <div class="summary-item">
+                                    <span class="label">Date:</span>
+                                    <span id="sumDate" class="value">--</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Time:</span>
+                                    <span id="sumTime" class="value">--</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="label">Guests:</span>
+                                    <span id="sumGuests" class="value">--</span>
+                                </div>
+                                <div id="sumSpecial" class="summary-item" style="display:none">
+                                    <span class="label">Level:</span>
+                                    <span class="value">VIP Seating ✨</span>
                                 </div>
                             </div>
-                            <button class="btn btn-primary" style="width: 100%;" id="confirmReserveBtn">Confirm
-                                Reservation</button>
+                            <button class="btn-modify" id="modifyBookingBtn">Modify
+                                Details</button>
+                        </div>
+
+                        <!-- App Navigation -->
+                        <div class="booking-controls">
+                            <button class="btn-back" id="prevStepBtn" style="visibility: hidden;">Back</button>
+                            <button class="btn btn-primary" id="nextStepBtn">Select
+                                Time</button>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </div>
+    </section>
 
     </div>
 
@@ -693,7 +818,8 @@
         <div class="modal-content login-box">
             <button class="modal-close">&times;</button>
             <h3 class="modal-title">Welcome Back 🐵</h3>
-            <p class="modal-subtitle">Sign in instantly with your <strong>3 Monkeys Orbit</strong> — effortless access, no passwords needed.</p>
+            <p class="modal-subtitle">Sign in instantly with your <strong>3 Monkeys Orbit</strong> — effortless access,
+                no passwords needed.</p>
 
             <div id="loginForm">
                 <div class="input-group">
@@ -733,6 +859,13 @@
                     </div>
                 </div>
                 <div class="header-actions">
+                    <button class="chat-cart-btn" id="chatCartBtn" aria-label="View Chat Cart">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                        </svg>
+                        <span class="chat-cart-badge" id="chatCartBadge" style="display: none;">0</span>
+                    </button>
                     <select id="langSelect" class="lang-switcher" aria-label="Select Language">
                         <option value="en">English</option>
                         <option value="hi">हिंदी (Hindi)</option>
@@ -758,6 +891,10 @@
                     <button class="chip" data-action="Spicy Items">🌶️ Spicy</button>
                     <button class="chip" data-action="Combos">🍱 Best Combos</button>
                     <button class="chip" data-action="Recommendations">💡 Suggest me</button>
+                    <button class="chip" data-action="Breakfast">🍳 Breakfast</button>
+                    <button class="chip" data-action="Drinks">☕ Drinks</button>
+                    <button class="chip" data-action="Halal">🥩 Halal</button>
+                    <button class="chip" data-action="Order Again">🔄 Order Again</button>
                 </div>
             </div>
 
