@@ -1,110 +1,112 @@
-# ☕ The 3 Monkeys Café
+# 🤖 AI Chatbot Website
 
-### Conversion-Focused Restaurant Website (UI/UX + Frontend)
+<p align="center">
+  <b>Modern AI Chatbot with Clean UI & Smooth Interaction</b><br>
+  Fast • Responsive • Privacy-Friendly
+</p>
 
-
-
-## 🚀 Project Overview
-
-A high-performance, mobile-first restaurant website designed to **increase conversions, improve user flow, and modernize digital presence** for a real café business in Preston.
-
-This project bridges **UI/UX design + business thinking**, focusing on how users actually order food — not just how a website looks.
-
-
-## 🧠 The Problem
-
-Most local takeaway businesses suffer from:
-
-* ❌ No optimized mobile experience
-* ❌ Weak or hidden call-to-actions
-* ❌ Cluttered, hard-to-read menus
-* ❌ No structured customer journey
-
-Despite strong offline demand, their **digital experience kills conversions**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Input-Text%20Only-important?style=for-the-badge" />
+</p>
 
 
-## 💡 The Solution
+## 🚀 Live Demo
 
-I designed a **conversion-driven interface** that:
-
-* Guides users from landing → browsing → ordering
-* Uses visual hierarchy to highlight key actions
-* Simplifies menu structure into decision-friendly sections
-* Integrates real-world ordering platforms
+🔗 https://marvelous-biscochitos-0102a9.netlify.app/
 
 
-## 🎯 Key Features
+## 📸 Preview
 
-* 📱 Mobile-first responsive design
-* ⚡ High-impact CTA system ("Order Now")
-* 🍔 Visual menu layout with real food imagery
-* 🧭 Smooth navigation with active state tracking
-* 📍 Google Maps + contact integration
-* 🛒 Interactive order modal (UberEats / JustEat / Direct)
+<p align="center">
+  <img src="Images/desktop.png" width="900"/>
+</p>
 
+<p align="center">
+  <img src="Images/mobile.png" width="300"/>
+</p>
 
-## 🎨 Design Strategy
+### 🖥️ Desktop Experience
 
-### 1. Conversion-First Layout
+<p align="center">
+  <img src="assets/desktop.png" width="950" style="border-radius:12px;" />
+</p>
 
-Hero → Trust → Menu → Info → CTA
-Every section pushes the user toward ordering.
+### 📱 Mobile Experience
 
-### 2. CTA Psychology
-
-* Skewed dynamic buttons → motion = attention
-* Strong contrast → instant visibility
-* Sticky mobile CTA → constant access
-
-### 3. Color System
-
-* Warm orange + brown → appetite + brand recall
-* Dark menu section → contrast for food visuals
-
-### 4. Visual Hierarchy
-
-* Food images = primary attention drivers
-* Typography supports quick scanning
-* Sections structured for fast decision-making
+<p align="center">
+  <img src="assets/mobile.png" width="320" />
+</p>
 
 
 
-## ⚙️ Technical Implementation
+## ✨ Features
 
-* Semantic HTML architecture
-* Modular CSS system with design tokens
-* Lightweight JavaScript for:
-
-  * navigation
-  * modal interactions
-  * smooth scrolling
-
-
-## 📈 Business Impact (Projected)
-
-* 🚀 Increased conversion rate
-* 📱 Improved mobile engagement
-* ⏱ Faster decision-making for users
-* 🍽 Stronger brand perception
+* 💬 Real-time chatbot interaction
+* 🎨 Clean and modern UI
+* ⚡ Lightweight and fast
+* 🔒 No microphone (privacy-focused)
+* 📱 Fully responsive design
 
 
 
-## 🧑‍💻 My Role
+## 🧠 Tech Stack
 
-* UI/UX Design
-* Frontend Development
-* Interaction Design
-* Visual Direction
-
-
-
-## 🌐 Live Demo
-
-👉 https://clinquant-fairy-ac76da.netlify.app/
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js" />
+</p>
 
 
 
-## 📩 Contact
+## 📂 Project Structure
 
-Sultan SaiRam
-📧 [sultansairamuk@gmail.com](mailto:sultansairamuk@gmail.com)
+```
+chatbot-ai-website/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── desktop.png
+│   └── mobile.png
+```
+
+
+
+## ▶️ Getting Started
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd chatbot-ai-website
+```
+
+Open `index.html` in your browser.
+
+
+
+## 🔄 Updates
+
+* ❌ Removed microphone feature
+* ✨ Improved UI and layout
+* 🧹 Cleaned and optimized code
+
+
+
+## 🔮 Future Plans
+
+* 🤖 AI API integration
+* 💾 Chat history
+* 🌙 Dark mode
+* 🎤 Optional voice toggle
+
+
+
+## 🔒 License
+
+This project is private and not licensed for public use.
+
+
+
+## 👨‍💻 Author
+
+SULTAN SAIRAM
