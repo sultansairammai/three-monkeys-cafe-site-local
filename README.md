@@ -20,11 +20,11 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="Images/desktop.png" width="900"/>
+  <img src="images/desktop.png" width="900"/>
 </p>
 
 <p align="center">
-  <img src="Images/mobile.png" width="300"/>
+  <img src="images/mobile.png" width="300"/>
 </p>
 
 ### 🖥️ Desktop Experience
