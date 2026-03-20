@@ -1,104 +1,126 @@
-# 🤖 AI Chatbot Website
+# ☕ Three Monkeys Cafe – Website Redesign Case Study
 
-<p align="center">
-  <b>Modern AI Chatbot with Clean UI & Smooth Interaction</b><br>
-  Fast • Responsive • Privacy-Friendly
-</p>
+A modern, conversion-focused redesign of the Three Monkeys Cafe website, created as a concept project to demonstrate improved user experience, visual storytelling, and brand positioning.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Input-Text%20Only-important?style=for-the-badge" />
-</p>
 
----
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-🔗 https://marvelous-biscochitos-0102a9.netlify.app/
+👉 https://sultansairammai.github.io/three-monkeys-cafe-site-local/
 
----
 
-## 📸 Preview
 
-### 🖥️ Desktop Experience
+## 🧠 Project Overview
 
-<p align="center">
-  <img src="images/desktop.png" width="950" style="border-radius:12px;" />
-</p>
+This project reimagines the digital presence of **Three Monkeys Cafe** with a focus on:
 
-### 📱 Mobile Experience
+* Enhancing first impressions
+* Improving navigation clarity
+* Creating a more immersive and premium feel
 
-<p align="center">
-  <img src="images/mobile.png" width="320" style="border-radius:12px;" />
-</p>
+The goal was to transform a standard cafe website into a visually engaging experience that better reflects the brand’s atmosphere and appeal.
 
-## ✨ Features
 
-* 💬 Real-time chatbot interaction
-* 🎨 Clean and modern UI
-* ⚡ Lightweight and fast
-* 🔒 No microphone (privacy-focused)
+
+## 🚨 Problem
+
+The existing website experience (assumed typical issues):
+
+* Outdated or inconsistent design
+* Weak visual hierarchy
+* Limited engagement or storytelling
+* Not optimised for mobile users
+
+
+## 💡 Solution
+
+A complete front-end redesign focusing on:
+
+* Clean, modern UI
+* Strong visual hierarchy
+* Mobile-first responsiveness
+* Clear content structure
+
+
+
+## 🎯 Design Goals
+
+* Create a **premium cafe brand feel**
+* Improve **user engagement and readability**
+* Guide users toward key actions (menu, visit, contact)
+* Ensure seamless experience across devices
+
+
+
+## ✨ Key Features
+
 * 📱 Fully responsive design
+* 🎨 Modern, minimal aesthetic
+* 🧭 Intuitive navigation
+* ⚡ Lightweight and fast-loading
+* 📸 Visual-first layout for stronger storytelling
 
----
 
-## 🧠 Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js" />
-</p>
+## 🖼️ Preview
 
----
+<h2>📱 Responsive Design</h2>
 
-## 📂 Project Structure
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/desktop.png" width="600"><br>
+      <b>Desktop View</b>
+    </td>
+    <td align="center">
+      <img src="images/mobile.png" width="250"><br>
+      <b>Mobile View</b>
+    </td>
+  </tr>
+</table>
 
-```
-chatbot-ai-website/
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-│   ├── desktop.png
-│   └── mobile.png
-```
 
----
+## 🛠️ Tech Stack
 
-## ▶️ Getting Started
+* HTML5
+* CSS3
+* JavaScript
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd chatbot-ai-website
-```
 
-Open `index.html` in your browser.
 
----
+## 📊 Outcome
 
-## 🔄 Updates
+This redesign demonstrates how thoughtful UI/UX improvements can:
 
-* ❌ Removed microphone feature
-* ✨ Improved UI and layout
-* 🧹 Cleaned and optimized code
+* Increase user engagement
+* Strengthen brand perception
+* Create a more memorable browsing experience
 
----
 
-## 🔮 Future Plans
+## 🚀 Future Enhancements
 
-* 🤖 AI API integration
-* 💾 Chat history
-* 🌙 Dark mode
-* 🎤 Optional voice toggle
+* Online reservations / booking system
+* Menu integration with dynamic content
+* Animations and micro-interactions
+* Performance optimization (Lighthouse improvements)
 
----
 
-## 🔒 License
 
-This project is private and not licensed for public use.
+## ⚠️ Disclaimer
 
----
+This is a **concept redesign** created for demonstration purposes only.
+It is not affiliated with or officially connected to Three Monkeys Cafe.
 
-## 👨‍💻 Author
 
-**Your Name**
+## 👨‍💻 About Me
+
+**Sultan Sairam**
+Frontend Developer | UI/UX Enthusiast
+
+GitHub: https://github.com/sultansairammai
+
+
+
+## 🤝 Let’s Work Together
+
+If you're looking to redesign your website or create a modern web experience, feel free to reach out or connect.
